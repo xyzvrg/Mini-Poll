@@ -1,0 +1,156 @@
+.poll-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 24px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.poll-header {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  margin-bottom: 32px;
+}
+
+.options-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.option-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.option-button {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  background-color: #f3f4f6;
+  cursor: pointer;
+}
+
+.option-button:hover {
+  background-color: #e5e7eb;
+}
+
+.option-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
+}
+
+.option-button.voted {
+  background-color: #dbeafe;
+  border-color: #3b82f6;
+}
+
+.option-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.option-text {
+  font-weight: 500;
+}
+
+.vote-count {
+  color: #6b7280;
+  font-size: 15px;
+}
+
+.progress-bar-container {
+  width: 100%;
+  background-color: #e5e7eb;
+  border-radius: 9999px;
+  height: 12px;
+  margin-top: 12px;
+}
+
+.progress-bar {
+  height: 12px;
+  border-radius: 9999px;
+}
+
+.selected-bar {
+  background-color: #3b82f6;
+}
+
+.regular-bar {
+  background-color: #9ca3af;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+.action-button {
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.reset-button {
+  background-color: #e5e7eb;
+}
+
+.reset-button:hover {
+  background-color: #d1d5db;
+}
+
+.vote-count {
+  font-size: 16px;
+  color: #6b7280;
+}
+
+.leader-section {
+  width: 100%;
+  text-align: center;
+  padding: 16px;
+  margin-top: 8px;
+  background-color: #f0f9ff;
+  border-radius: 6px;
+  border-left: 4px solid #3b82f6;
+}
+
+.leader-section h3 {
+  font-size: 18px;
+  color: #1e40af;
+  margin: 0 0 8px 0;
+}
+
+.leader-section p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1e3a8a;
+  margin: 0;
+}
